@@ -1,0 +1,19 @@
+.Pinyon{
+    font-family: 'Pinyon Script', cursive;
+    color: #C89446;
+    font-size: 3.75rem;
+    margin-bottom: 0;
+}
+
+.square{
+    border: 1px solid #C89446;
+    height: 425px;
+    width: 350px;
+    position: absolute;
+}
+
+.z_index{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
