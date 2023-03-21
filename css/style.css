@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6F6F6F;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+img {
+  height: auto;
+  width: auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: "Pinyon Script", cursive;
+  color: #C89446;
+}
+
+h3 {
+  font-weight: bold;
+  font-variant: small-caps;
+  color: black;
+}
+
+.header {
+  background-image: url(/Code_cours/TP/Le_fiasco/img/eggs.jpg);
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.header .navbars {
+  align-items: center;
+  padding: 10px;
+}
+.header .navbars .logo a {
+  color: white;
+  font-variant: small-caps;
+}
+.header .navbars .logo a:hover {
+  transition: all 3s;
+  color: #C89446;
+}
+.header .navbars .menu {
+  justify-content: space-around;
+}
+.header .navbars .menu a {
+  color: white;
+  font-variant: small-caps;
+}
+.header .navbars .menu a:hover {
+  transition: all 3s;
+  color: #C89446;
+}
+.header .navbars .menu .reserver {
+  border: 1px solid #C89446;
+}
+.header .navbars .menu .reserver:hover {
+  transition: all 3s;
+  background-color: #C89446;
+  color: black;
+}
+.header .titre {
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+}
+.header .titre h1 {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 4.375rem;
+  letter-spacing: 5px;
+}
+.header .titre .special {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+}
+
+main {
+  background: fixed top 95px right 0px url(../img/oranges.jpg) no-repeat, fixed top 640px left 0px url(../img/spices.jpg) no-repeat;
+}
+main .discover a {
+  font-family: "Pinyon Script" cursive;
+  color: #C89446;
+}
+main .discover h2 {
+  font-size: 2.5rem;
+}
+main .discover h3 {
+  font-size: 1.75rem;
+}
+main .discover .discover_burger .div_burger {
+  display: flex;
+  flex-direction: row;
+}
+main .discover .discover_burger .img_burger {
+  position: relative;
+}
+@media (min-width: 768px) {
+  main .discover .discover_burger .img_burger {
+    padding: 30px;
+  }
+}
+main .discover .discover_chicken .div_chicken {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main .discover .discover_chicken .img_chicken {
+  position: relative;
+}
+@media (min-width: 768px) {
+  main .discover .discover_chicken .img_chicken {
+    padding: 30px;
+  }
+}
+main .menu .certified {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .menu .certified p {
+  text-align: center;
+}
+main .menu .certified a {
+  color: black;
+  font-weight: bold;
+  margin: 40px;
+}
+main .menu .certified a:hover {
+  transition: step-start 1s;
+  text-decoration: underline #C89446;
+}
+main .menu .choice {
+  margin-top: 100px;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  main .menu .choice .text {
+    text-align: right;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 768px) {
+  main .menu .choice .bot_menu {
+    margin-top: 130px;
+  }
+}
+main .menu .square_menu {
+  border: 1px solid #C89446;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  z-index: 1;
+  margin: 270px 680px;
+}
+@media (min-width: 768px) {
+  main .menu .square_menu {
+    transform: translate(-50%, -260px) rotate(45deg);
+  }
+}
+main .chief {
+  margin-top: 100px;
+}
+main .chief a {
+  font-family: "Pinyon Script" cursive;
+  color: #C89446;
+}
+main .reservation {
+  background-image: url("/Code_cours/TP/Le_fiasco/img/reservation.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .reservation div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .reservation h3 {
+  color: white;
+}
+main .reservation p {
+  color: lightgray;
+  width: 70%;
+  text-align: center;
+}
+main .reservation form div {
+  height: 50px;
+}
+main .reservation form div #name,
+main .reservation form div #date,
+main .reservation form div select {
+  margin: 10px;
+  background: none;
+  color: white;
+  font-size: small;
+  border: 1px solid gray;
+  width: 100%;
+  height: 100%;
+}
+main .reservation form div #name:hover,
+main .reservation form div #date:hover,
+main .reservation form div select:hover {
+  border: 1px solid #C89446;
+}
+main .reservation form div #reserver {
+  background-color: #C89446;
+  color: white;
+  border: none;
+  padding: 5px 40px;
+  margin: 50px 10px;
+}
+main .reservation form div #reserver:hover {
+  background: none;
+  border: 1px solid #C89446;
+}
+main .back-recipes {
+  background: no-repeat top left/50vw auto url(/Code_cours/TP/Le_fiasco/img/news-bg.jpg);
+  padding-bottom: 40px;
+}
+main .back-recipes .recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main .back-recipes .date-recipes strong {
+  color: black;
+}
+main .back-recipes .date-recipes a {
+  font-family: "Pinyon Script" cursive;
+  color: #C89446;
+}
+main .map {
+  width: 100%;
+}
+main .map iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #333333;
+  padding-top: 10px;
+  background: no-repeat bottom right url(/Code_cours/TP/Le_fiasco/img/splash.png);
+  background-color: #333333;
+}
+footer h3 {
+  color: #C89446;
+  font-size: medium;
+}
+footer p {
+  color: white;
+  font-weight: lighter;
+}
+
+@media (min-width: 1100px) {
+  .discover_chicken {
+    margin-right: 150px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    background-image: none;
+  }
+  .square,
+  .square_menu {
+    display: none;
+  }
+  .img_burger {
+    border: 1px solid #C89446;
+    margin: 0;
+    padding: 0;
+  }
+  .discover {
+    text-align: center;
+  }
+  .discover_burger {
+    margin-top: 10px;
+  }
+  .div_chicken {
+    display: flex;
+    justify-content: center;
+  }
+  .img_chicken {
+    border: 1px solid #C89446;
+    margin: 0;
+    padding: 0;
+  }
+  .text {
+    text-align: left;
+  }
+  .plat {
+    margin: 10px;
+  }
+  .plat h3,
+  .plat p,
+  .plat h2 {
+    margin-left: 10px;
+  }
+  .chief {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .chief .chief_img {
+    border: 1px solid #C89446;
+    width: 50%;
+  }
+  .chief .chief_img img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
